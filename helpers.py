@@ -35,7 +35,6 @@ def pedir_ecuacion():
 
 #-------------------------------------------------------------------------------
 def obtener_valores(ecuacion, valores):
-    print(valores)
 
     #Definimos la tupla donde se guardaran los valores
     resultados = tuple()

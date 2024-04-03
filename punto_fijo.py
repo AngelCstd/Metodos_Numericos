@@ -30,8 +30,8 @@ def punto_fijo():
         valor_2_x_anterior = ecuacion_2_xi
 
         #Obtenemos el nuevo valor de x
-        ecuacion_1_xi, ignore = obtener_valores(ecuacion_1_despejada, (ecuacion_1_xi, 0))
-        ecuacion_2_xi, ignore = obtener_valores(ecuacion_2_despejada, (ecuacion_2_xi, 0))
+        ecuacion_1_xi= obtener_valores(ecuacion_1_despejada, [ecuacion_1_xi])[0]
+        ecuacion_2_xi= obtener_valores(ecuacion_2_despejada, [ecuacion_2_xi])[0]
 
         #Guardar esa x y obtener el error
         error_ecuacion_1 = error_resta((valor_1_x_anterior, ecuacion_1_xi))
