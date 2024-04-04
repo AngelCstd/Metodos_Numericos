@@ -1,4 +1,4 @@
-from helpers import pedir_ecuacion, obtener_valores, error_resta
+from helpers import pedir_ecuacion, obtener_valores, error_resta, multiplicar_lista
 from sympy import symbols, Add, sqrt
 
 x = symbols('x')
@@ -78,10 +78,3 @@ def despeje_x_cuadrada(ecuacion_list_copia):
     ecuacion_despejada = sqrt(ecuacion_dividida_despejada)
 
     return ecuacion_despejada
-#_----------------------------------------------------------------
-def multiplicar_lista(lista, multiplicador):
-
-    #Recorremos a lista multiplicandola 
-    for i in range(len(lista)):
-        lista[i] = lista[i]*multiplicador
-    return lista
